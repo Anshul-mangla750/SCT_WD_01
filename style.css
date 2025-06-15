@@ -727,3 +727,74 @@ header{
   background: #c0392b;
 }
 
+/* Media queries for navbar and hero section responsiveness */
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  #navbar .logo {
+    width: 100px;
+    margin: 0 auto 10px auto;
+  }
+
+  #menu {
+    width: 100%;
+    position: static;
+    flex-direction: column;
+    background-color: transparent;
+    height: auto;
+    transform: none;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu li {
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 140px 10px 40px 10px; /* increased top padding to offset fixed navbar */
+    min-height: auto;
+  }
+
+  .hero-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .h-left, .h-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .h-right img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .h-left h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .h-left p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .search {
+    display: flex;
+    justify-content: center;
+  }
+
+  #w-btn {
+    padding: 10px 30px;
+    font-size: 1rem;
+  }
+}
